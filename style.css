@@ -1,0 +1,273 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+/* Wrapper to hold menu and content side by side */
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar Menu */
+.menu {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.menu h1 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 15px 0;
+}
+
+.menu ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    color: white;
+}
+
+/* Content Section */
+.content {
+    margin-left: 250px;
+    padding: 40px;
+    flex-grow: 1;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Gallery Section */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: none;
+}
+
+.gallery-item p {
+    padding: 15px;
+    font-size: 1.1em;
+    text-align: center;
+    color: #333;
+}
+
+/* Links Section */
+#links ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#links ul li {
+    margin: 10px 0;
+}
+
+#links ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#links ul li a:hover {
+    color: #007BFF;
+}
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    background-color: #555;
+}
+
+.social-icon i {
+    font-size: 1.2em;
+}
+
+/* Facebook */
+.social-icon .fa-facebook-f {
+    color: white;
+}
+.social-icon:hover .fa-facebook-f {
+    color: #1877f2;
+}
+
+/* LinkedIn */
+.social-icon .fa-linkedin-in {
+    color: white;
+}
+.social-icon:hover .fa-linkedin-in {
+    color: #0077b5;
+}
+
+/* Instagram */
+.social-icon .fa-instagram {
+    color: white;
+}
+.social-icon:hover .fa-instagram {
+    color: #e4405f;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #555;
+    box-shadow: 0 0 0 2px rgba(85, 85, 85, 0.1);
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
