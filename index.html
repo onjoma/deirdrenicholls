@@ -3,107 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Deirdre Nicholls - Artist</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
-    <div class="wrapper">
-        <!-- Side Menu -->
-        <div class="menu">
-            <h1>Deirdre Nicholls</h1>
-            <ul>
-                <li><a href="#landing">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#studio">Studio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#tutorials">Tutorials</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#social">Social</a></li>
-            </ul>
-        </div>
-
-        <!-- Main Content -->
-        <div class="content">
-            <section id="landing">
-                <h2>Welcome to Deirdre Nicholls' Website</h2>
-                <p>Welcome to my personal space where I share my journey and works as an artist. Please explore my galleries, studio, tutorials, and blog. Let's connect!</p>
-            </section>
-
-            <section id="gallery">
-                <h2>Gallery</h2>
-                <div class="gallery-container">
-                    <div class="gallery-item">
-                        <img src="https://images.pexels.com/photos/134402/pexels-photo-134402.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern Abstract Sculpture">
-                        <p>Modern Sculpture</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80" alt="Painting - Abstract artwork">
-                        <p>Abstract Painting</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1574182245530-967d9b3831af?w=800&q=80" alt="Mixed Media Art">
-                        <p>Mixed Media</p>
+<body id="top">
+    <!-- Navigation -->
+    <div class="nav-container">
+        <nav>
+            <div class="logo">
+                <a href="#" class="logo-text">Deirdre Nicholls</a>
+            </div>
+            <div class="nav-links">
+                <a href="#top">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#gallery">Gallery</a>
+                    <div class="dropdown-content">
+                        <a href="#sculpture">Sculpture</a>
+                        <a href="#paintings">Paintings</a>
                     </div>
                 </div>
-            </section>
-
-            <section id="studio">
-                <h2>Studio</h2>
-                <p>Explore my ongoing projects and studio life, including works-in-progress, studio shots, and videos of my techniques.</p>
-            </section>
-
-            <section id="blog">
-                <h2>Blog</h2>
-                <p>Check out my thoughts, musings, and updates on my artistic journey.</p>
-            </section>
-
-            <section id="tutorials">
-                <h2>Tutorials</h2>
-                <p>Learn my watercolor techniques through detailed tutorials and demonstrations.</p>
-            </section>
-
-            <section id="contact">
-                <h2>Contact</h2>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Your name">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required placeholder="Your email">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required placeholder="Your message"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
+                <div class="nav-item dropdown">
+                    <a href="#studio">Studio</a>
+                    <div class="dropdown-content">
+                        <a href="#works-in-progress">Works in Progress</a>
+                        <a href="#studio-shots">Studio Shots</a>
+                        <a href="#technique-videos">Videos of Techniques</a>
+                    </div>
                 </div>
-            </section>
-
-            <section id="social">
-                <h2>Follow Me</h2>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/DeirdreNicholls" class="social-icon" title="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/deirdre-nicholls" class="social-icon" title="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.instagram.com/deirdre_nicholls" class="social-icon" title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </section>
-        </div>
+                <a href="#blog">Blog</a>
+                <a href="#tutorials">Tutorials</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
     </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=1600&q=80" alt="Hero Image">
+        </div>
+        <div class="container">
+            <h1>Deirdre Nicholls</h1>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-card">
+                <div class="profile-image">
+                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80" alt="Deirdre Nicholls - Artist Portrait">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">About Me</h2>
+                    <p>Contemporary artist working with various mediums to explore the intersection of nature and human experience. My work spans sculpture, painting, and mixed media installations, drawing inspiration from the organic patterns and rhythms found in nature. Through my art, I seek to create immersive experiences that invite viewers to reflect on their connection to the natural world and each other.</p>
+                    <p>I regularly exhibit my work in galleries and collaborate with other artists on environmental art projects. When I'm not creating, I enjoy sharing my knowledge through workshops and mentoring emerging artists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="card">
+                    <h3 id="sculpture">Sculpture</h3>
+                    <div class="gallery-items">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=800&q=80" alt="Abstract Sculpture">
+                            <div class="overlay">
+                                <p>Abstract Form #1</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1576773689115-5cd2b0223523?w=800&q=80" alt="Metal Sculpture">
+                            <div class="overlay">
+                                <p>Metal Series</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 id="paintings">Paintings</h3>
+                    <div class="gallery-items">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=800&q=80" alt="Abstract Painting">
+                            <div class="overlay">
+                                <p>Color Study</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80" alt="Mixed Media">
+                            <div class="overlay">
+                                <p>Mixed Media #3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio Section -->
+    <section class="studio" id="studio">
+        <div class="container">
+            <h2 class="section-title">Studio</h2>
+            <div class="studio-grid">
+                <div class="card">
+                    <h3 id="works-in-progress">Works in Progress</h3>
+                    <div class="studio-item">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&q=80" alt="Work in Progress">
+                        <div class="overlay">
+                            <p>Current Project</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 id="studio-shots">Studio Shots</h3>
+                    <div class="studio-item">
+                        <img src="https://images.unsplash.com/photo-1580136579312-94651dfd596d?w=800&q=80" alt="Studio Space">
+                        <div class="overlay">
+                            <p>Studio Space</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 id="technique-videos">Technique Videos</h3>
+                    <div class="studio-item video-item">
+                        <img src="https://images.unsplash.com/photo-1574182245530-967d9b3831af?w=800&q=80" alt="Technique Video">
+                        <div class="overlay">
+                            <i class="fas fa-play"></i>
+                            <p>Watch Process</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <div class="blog-grid">
+                <div class="card blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1579762715118-a6f1d4b934f1?w=800&q=80" alt="Watercolor Techniques">
+                    </div>
+                    <div class="blog-content">
+                        <span class="date">December 5, 2024</span>
+                        <h3>Exploring New Watercolor Techniques</h3>
+                        <p>Discovering innovative approaches to watercolor painting through experimentation with natural pigments and traditional techniques.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80" alt="Studio Process">
+                    </div>
+                    <div class="blog-content">
+                        <span class="date">November 28, 2024</span>
+                        <h3>Behind the Scenes: Studio Process</h3>
+                        <p>A glimpse into my creative process and the evolution of my latest sculpture series exploring organic forms.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&q=80" alt="Art Exhibition">
+                    </div>
+                    <div class="blog-content">
+                        <span class="date">November 15, 2024</span>
+                        <h3>Reflections on Recent Exhibition</h3>
+                        <p>Thoughts and insights from my latest gallery showing, featuring new works and interactions with fellow artists.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials Section -->
+    <section class="tutorials" id="tutorials">
+        <div class="container">
+            <h2 class="section-title">Tutorials</h2>
+            <div class="tutorials-grid">
+                <div class="card tutorial-card">
+                    <div class="tutorial-image">
+                        <img src="https://images.unsplash.com/photo-1605722625766-a4c989c747a4?w=800&q=80" alt="Watercolor Basics">
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Watercolor Basics for Beginners</h3>
+                        <p>Learn fundamental techniques including wet-on-wet, layering, and color mixing. Perfect for those starting their watercolor journey.</p>
+                        <span class="duration">45 minutes</span>
+                    </div>
+                </div>
+                <div class="card tutorial-card">
+                    <div class="tutorial-image">
+                        <img src="https://images.unsplash.com/photo-1578301978162-7aae4d755744?w=800&q=80" alt="Nature Studies">
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Nature Studies in Watercolor</h3>
+                        <p>Explore techniques for painting botanical subjects, from delicate flowers to textured leaves. Focus on color and detail.</p>
+                        <span class="duration">60 minutes</span>
+                    </div>
+                </div>
+                <div class="card tutorial-card">
+                    <div class="tutorial-image">
+                        <img src="https://images.unsplash.com/photo-1584448097639-99cf648e8def?w=800&q=80" alt="Advanced Techniques">
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Advanced Watercolor Techniques</h3>
+                        <p>Master advanced methods including glazing, negative painting, and creating atmospheric effects in your work.</p>
+                        <span class="duration">75 minutes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Interested in commissioning a piece, attending a workshop, or just want to say hello? I'd love to hear from you.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="far fa-envelope"></i>
+                            <span>Email: info@deirdrenicholls.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram: @deirdrenicholls.art</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook: Deirdre Nicholls Art</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Deirdre Nicholls. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
